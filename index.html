@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chosen: A jQuery Plugin by Harvest to Tame Unwieldy Select Boxes</title>
+  <link rel="stylesheet" href="docsupport/style.css">
+  <link rel="stylesheet" href="docsupport/prism.css">
+  <link rel="stylesheet" href="chosen.css">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos;; script-src &apos;self&apos; https://ajax.googleapis.com; style-src &apos;self&apos;; img-src &apos;self&apos; data:">
+
+</head>
+<body>
+  <form>
+    <div id="container">
+      <div id="content">
+        <header>
+          <h1>Chosen <small>(<span id="latest-version">v1.8.7</span>)</small></h1>
+        </header>
+
+        <h2><a name="standard-select" class="anchor" href="#standard-select">Standard Select</a></h2>
+      <div class="side-by-side clearfix">
+        <div>
+          <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+            <option value=""></option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Aland Islands">Aland Islands</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+          </select>
+        </div>
+      </div>
+
+      <h2><a name="multiple-select" class="anchor" href="#multiple-select">Multiple Select</a></h2>
+      <div class="side-by-side clearfix">
+        <div>
+          <select data-placeholder="Choose a Country..." class="chosen-select" multiple tabindex="4">
+            <option value=""></option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Aland Islands">Aland Islands</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+          </select>
+        </div>
+      </div>
+
+      <h2><a name="optgroup-support" class="anchor" href="#optgroup-support">&lt;optgroup&gt; Support</a></h2>
+      <div class="side-by-side clearfix">
+        <div>
+          <em>Single Select with Groups</em>
+          <select data-placeholder="Your Favorite Football Team" class="chosen-select" tabindex="5">
+            <option value=""></option>
+            <optgroup label="NFC EAST">
+              <option>Dallas Cowboys</option>
+              <option>New York Giants</option>
+              <option>Philadelphia Eagles</option>
+              <option>Washington Redskins</option>
+            </optgroup>
+            <optgroup label="NFC NORTH">
+              <option>Chicago Bears</option>
+              <option>Detroit Lions</option>
+              <option>Green Bay Packers</option>
+              <option>Minnesota Vikings</option>
+            </optgroup>
+            <optgroup label="NFC SOUTH">
+              <option>Atlanta Falcons</option>
+              <option>Carolina Panthers</option>
+              <option>New Orleans Saints</option>
+              <option>Tampa Bay Buccaneers</option>
+            </optgroup>
+            <optgroup label="NFC WEST">
+              <option>Arizona Cardinals</option>
+              <option>St. Louis Rams</option>
+              <option>San Francisco 49ers</option>
+              <option>Seattle Seahawks</option>
+            </optgroup>
+            <optgroup label="AFC EAST">
+              <option>Buffalo Bills</option>
+              <option>Miami Dolphins</option>
+              <option>New England Patriots</option>
+              <option>New York Jets</option>
+            </optgroup>
+            <optgroup label="AFC NORTH">
+              <option>Baltimore Ravens</option>
+              <option>Cincinnati Bengals</option>
+              <option>Cleveland Browns</option>
+              <option>Pittsburgh Steelers</option>
+            </optgroup>
+            <optgroup label="AFC SOUTH">
+              <option>Houston Texans</option>
+              <option>Indianapolis Colts</option>
+              <option>Jacksonville Jaguars</option>
+              <option>Tennessee Titans</option>
+            </optgroup>
+            <optgroup label="AFC WEST">
+              <option>Denver Broncos</option>
+              <option>Kansas City Chiefs</option>
+              <option>Oakland Raiders</option>
+              <option>San Diego Chargers</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <em>Multiple Select with Groups</em>
+          <select data-placeholder="Your Favorite Football Team" class="chosen-select" multiple tabindex="6">
+            <option value=""></option>
+            <optgroup label="NFC EAST">
+              <option>Dallas Cowboys</option>
+              <option>New York Giants</option>
+              <option>Philadelphia Eagles</option>
+              <option>Washington Redskins</option>
+            </optgroup>
+            <optgroup label="NFC NORTH">
+              <option>Chicago Bears</option>
+              <option>Detroit Lions</option>
+              <option>Green Bay Packers</option>
+              <option>Minnesota Vikings</option>
+            </optgroup>
+            <optgroup label="NFC SOUTH">
+              <option>Atlanta Falcons</option>
+              <option>Carolina Panthers</option>
+              <option>New Orleans Saints</option>
+              <option>Tampa Bay Buccaneers</option>
+            </optgroup>
+            <optgroup label="NFC WEST">
+              <option>Arizona Cardinals</option>
+              <option>St. Louis Rams</option>
+              <option>San Francisco 49ers</option>
+              <option>Seattle Seahawks</option>
+            </optgroup>
+            <optgroup label="AFC EAST">
+              <option>Buffalo Bills</option>
+              <option>Miami Dolphins</option>
+              <option>New England Patriots</option>
+              <option>New York Jets</option>
+            </optgroup>
+            <optgroup label="AFC NORTH">
+              <option>Baltimore Ravens</option>
+              <option>Cincinnati Bengals</option>
+              <option>Cleveland Browns</option>
+              <option>Pittsburgh Steelers</option>
+            </optgroup>
+            <optgroup label="AFC SOUTH">
+              <option>Houston Texans</option>
+              <option>Indianapolis Colts</option>
+              <option>Jacksonville Jaguars</option>
+              <option>Tennessee Titans</option>
+            </optgroup>
+            <optgroup label="AFC WEST">
+              <option>Denver Broncos</option>
+              <option>Kansas City Chiefs</option>
+              <option>Oakland Raiders</option>
+              <option>San Diego Chargers</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+
+      <h2><a name="selected-and-disabled-support" class="anchor" href="#selected-and-disabled-support">Selected and Disabled Support</a></h2>
+      <div class="side-by-side clearfix">
+        <p>Chosen automatically highlights selected options and removes disabled options.</p>
+        <div>
+          <em>Single Select</em>
+          <select data-placeholder="Your Favorite Type of Bear" class="chosen-select" tabindex="7">
+            <option value=""></option>
+            <option>American Black Bear</option>
+            <option>Asiatic Black Bear</option>
+            <option>Brown Bear</option>
+            <option>Giant Panda</option>
+            <option selected>Sloth Bear</option>
+            <option disabled>Sun Bear</option>
+            <option>Polar Bear</option>
+            <option disabled>Spectacled Bear</option>
+          </select>
+        </div>
+        <div>
+          <em>Multiple Select</em>
+          <select data-placeholder="Your Favorite Types of Bear" multiple class="chosen-select" tabindex="8">
+            <option value=""></option>
+            <option>American Black Bear</option>
+            <option>Asiatic Black Bear</option>
+            <option>Brown Bear</option>
+            <option>Giant Panda</option>
+            <option selected>Sloth Bear</option>
+            <option disabled>Sun Bear</option>
+            <option selected>Polar Bear</option>
+            <option disabled>Spectacled Bear</option>
+          </select>
+        </div>
+      </div>
+
+    
+
+      <footer>
+        &copy; 2011&ndash;2016 <a href="http://www.getharvest.com/">Harvest</a>. Chosen is licensed under the <a href="https://github.com/harvesthq/chosen/blob/master/LICENSE.md">MIT license</a>.
+      </footer>
+
+    </div>
+  </div>
+  <script src="docsupport/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="chosen.jquery.js" type="text/javascript"></script>
+  <script src="docsupport/prism.js" type="text/javascript" charset="utf-8"></script>
+  <script src="docsupport/init.js" type="text/javascript" charset="utf-8"></script>
+  </form>
+</body>
+</html>
