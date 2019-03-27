@@ -21,7 +21,6 @@ select에 항목이 많은 경우에 검색이 가능도록 하는 jQuery 플러
 $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
 ```
 
-![ezgif-2-02bb5052299e](https://user-images.githubusercontent.com/38427658/55020824-02190f00-503b-11e9-810e-d8df733595aa.gif)
+![ezgif-2-b74d3d745316](https://user-images.githubusercontent.com/38427658/55099149-9306ed80-5102-11e9-923e-9cd8f15f3fe6.gif)
 
-
-[참고 자료](https://github.com/harvesthq/chosen/releases)
+[참고 자료] (https://github.com/harvesthq/chosen/releases)
